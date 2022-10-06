@@ -1,5 +1,0 @@
-javascript.js
-const livros = ['A Hora da Estrela', 'Antes do Baile Verde', 'Auto da Compadecida', 'Capitães de Areia'];
-livros.forEach(function(book){
-  console.log(book);
-}); 
