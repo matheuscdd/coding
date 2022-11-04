@@ -9,7 +9,7 @@
     <link href="https://i.postimg.cc/8PvdtzW7/calculator.png" rel="shortcut icon" type="image/x-icon">
     <title>ConvertPxRem</title>
 </head>
-<body>
+<body onblur="change()" onfocus="back()">
     <main>
         <h1>Convert <span class="purple">px</span> to <span class="red">rem</span></h1>
         <input type="number" placeholder="px" onkeyup="convert()" id="inputPx">
