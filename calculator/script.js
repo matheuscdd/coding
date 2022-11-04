@@ -24,15 +24,11 @@ document.addEventListener("keydown", (event) => {
         
     }
 })
-window.document.addEventListener("mouseover", () => {
-    window.document.addEventListener("blur", () => {
-        if (document.hasFocus() === false) {
-            document.body.classList.add("blur");
-        } 
-    })
-    window.document.addEventListener("focus", () => {
-        if (document.body.classList.contains('blur')) {
-            document.body.classList.remove('blur');
-        }
-    })
-})
+
+function change() {
+    document.body.classList = "blur";
+}
+
+function back() {
+    document.body.classList = "";
+}
