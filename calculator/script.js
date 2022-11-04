@@ -5,12 +5,13 @@ function convert() {
     let calc = (px)/16;
 
     document.querySelector("#inputRem").value = calc;
+  navigator.clipboard.writeText(calc+`rem;`);
     return calc
 }
 
 function copy() {
     let calc = convert();
-    navigator.clipboard.writeText(calc+`rem;`)
+    navigator.clipboard.writeText(calc+`rem;`);
     document.querySelector("#inputRem");
     document.body.classList.add('clicked');
     setTimeout(() => document.body.classList.remove('clicked'), 100);
@@ -31,4 +32,6 @@ function change() {
 
 function back() {
     document.body.classList = "";
+   document.querySelector('#inputPx').value = "";
+  setTimeout(() => document.querySelector('#inputPx').focus(), 100);
 }
